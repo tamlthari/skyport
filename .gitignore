@@ -27,7 +27,7 @@ __pycache__/
 # MACHINE LEARNING & MASSIVE DATA
 # ==========================================
 # Ignore raw data and heavy compressed files
-skyport-ml/data/raw/
+#skyport-ml/data/raw/
 #*.parquet
 *.zip
 *.csv
