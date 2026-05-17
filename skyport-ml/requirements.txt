@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+pydantic
+requests
+pyarrow
+holidays
+joblib
+fastparquet
+nycflights13
+torch

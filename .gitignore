@@ -1,0 +1,52 @@
+# ==========================================
+# FRONTEND (React / Node.js / Vite)
+# ==========================================
+node_modules/
+dist/
+build/
+.npm/
+npm-debug.log*
+yarn-error.log*
+.env
+.env.local
+.env.*.local
+
+# ==========================================
+# BACKEND (Python / FastAPI)
+# ==========================================
+skyport-ml/.venv/
+skyport-ml/venv/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# ==========================================
+# MACHINE LEARNING & MASSIVE DATA
+# ==========================================
+# Ignore raw data and heavy compressed files
+skyport-ml/data/raw/
+*.parquet
+*.zip
+*.csv
+
+# Ignore physical model weights (too large for Git)
+skyport-ml/models/*.joblib
+skyport-ml/models/*.pt
+skyport-ml/models/*.pkl
+
+# Ignore the historical model registry vaults
+#skyport-ml/models/registry/v*/
+
+# ==========================================
+# OS & IDE GENERATED FILES
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.vscode/
+.idea/

@@ -1,0 +1,10 @@
+# Ignore the entire Python backend and datasets
+skyport-ml/
+
+# Ignore local Node modules and previous builds
+node_modules/
+dist/
+.npm/
+
+# Ignore Git history
+.git/

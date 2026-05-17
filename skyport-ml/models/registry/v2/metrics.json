@@ -1,0 +1,374 @@
+[
+  {
+    "name": "XGBoost Ensemble",
+    "accuracy": 74.5,
+    "aucRoc": 0.804,
+    "f1": 0.543,
+    "precision": 0.448,
+    "recall": 0.689,
+    "trainTimeSeconds": 11.4,
+    "inferenceMs": 2.1,
+    "trainedOn": "2026-05-12 17:31",
+    "confusionMatrix": {
+      "tn": 27869,
+      "fp": 8743,
+      "fn": 3209,
+      "tp": 7106
+    },
+    "rocCurve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.008
+      },
+      {
+        "fpr": 0.02,
+        "tpr": 0.236
+      },
+      {
+        "fpr": 0.05,
+        "tpr": 0.358
+      },
+      {
+        "fpr": 0.1,
+        "tpr": 0.488
+      },
+      {
+        "fpr": 0.15,
+        "tpr": 0.574
+      },
+      {
+        "fpr": 0.2,
+        "tpr": 0.642
+      },
+      {
+        "fpr": 0.3,
+        "tpr": 0.748
+      },
+      {
+        "fpr": 0.4,
+        "tpr": 0.821
+      },
+      {
+        "fpr": 0.5,
+        "tpr": 0.879
+      },
+      {
+        "fpr": 0.7,
+        "tpr": 0.957
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "status": "Production",
+    "params": "300 trees",
+    "framework": "XGBoost",
+    "featureImportance": {
+      "HIST_DELAY_RATE_ROUTE": 0.0641,
+      "WEATHER_SEVERITY_SCORE": 0.03,
+      "DEP_HOUR_SIN": 0.14,
+      "DEP_HOUR_COS": 0.0402,
+      "DOW_SIN": 0.0259,
+      "DOW_COS": 0.0229,
+      "TURNAROUND_MINUTES": 0.0672,
+      "CARRIER_ONTIME_RATE": 0.4285,
+      "AIRPORT_CONGESTION_IDX": 0.0287,
+      "ROUTE_DISTANCE_MI": 0.0389,
+      "WIND_SPEED_KT": 0.0257,
+      "ATC_DELAY_PROGRAM": 0.0366,
+      "ATC_AVG_DELAY_MIN": 0.0222,
+      "SEASON_HOLIDAY_FLAG": 0.0292
+    },
+    "lossCurve": [
+      0.6816,
+      0.5952,
+      0.5604,
+      0.5451,
+      0.5378,
+      0.5336,
+      0.531,
+      0.5297,
+      0.5285,
+      0.5272,
+      0.5266,
+      0.5259,
+      0.5249,
+      0.5241,
+      0.5237,
+      0.5229,
+      0.5222,
+      0.5216,
+      0.521,
+      0.5202,
+      0.5197,
+      0.5192,
+      0.5188,
+      0.5183,
+      0.5178
+    ]
+  },
+  {
+    "name": "LightGBM",
+    "accuracy": 73.9,
+    "aucRoc": 0.804,
+    "f1": 0.54,
+    "precision": 0.44,
+    "recall": 0.697,
+    "trainTimeSeconds": 50.1,
+    "inferenceMs": 5.33,
+    "trainedOn": "2026-05-12 17:32",
+    "confusionMatrix": {
+      "tn": 27480,
+      "fp": 9132,
+      "fn": 3130,
+      "tp": 7185
+    },
+    "rocCurve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.02,
+        "tpr": 0.229
+      },
+      {
+        "fpr": 0.05,
+        "tpr": 0.359
+      },
+      {
+        "fpr": 0.1,
+        "tpr": 0.484
+      },
+      {
+        "fpr": 0.15,
+        "tpr": 0.571
+      },
+      {
+        "fpr": 0.2,
+        "tpr": 0.639
+      },
+      {
+        "fpr": 0.3,
+        "tpr": 0.745
+      },
+      {
+        "fpr": 0.4,
+        "tpr": 0.819
+      },
+      {
+        "fpr": 0.5,
+        "tpr": 0.877
+      },
+      {
+        "fpr": 0.7,
+        "tpr": 0.959
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "status": "Trained",
+    "params": "300 trees",
+    "framework": "LightGBM",
+    "featureImportance": {
+      "HIST_DELAY_RATE_ROUTE": 69.88,
+      "WEATHER_SEVERITY_SCORE": 20.12,
+      "DEP_HOUR_SIN": 45.06,
+      "DEP_HOUR_COS": 27.87,
+      "DOW_SIN": 17.87,
+      "DOW_COS": 8.48,
+      "TURNAROUND_MINUTES": 100.0,
+      "CARRIER_ONTIME_RATE": 59.7,
+      "AIRPORT_CONGESTION_IDX": 49.63,
+      "ROUTE_DISTANCE_MI": 81.46,
+      "WIND_SPEED_KT": 56.83,
+      "ATC_DELAY_PROGRAM": 0.43,
+      "ATC_AVG_DELAY_MIN": 2.99,
+      "SEASON_HOLIDAY_FLAG": 8.48
+    }
+  },
+  {
+    "name": "Transformer (Flight-DT)",
+    "accuracy": 73.6,
+    "aucRoc": 0.772,
+    "f1": 0.516,
+    "precision": 0.432,
+    "recall": 0.641,
+    "trainTimeSeconds": 511.7,
+    "inferenceMs": 1.73,
+    "trainedOn": "2026-05-12 17:46",
+    "confusionMatrix": {
+      "tn": 27934,
+      "fp": 8678,
+      "fn": 3706,
+      "tp": 6609
+    },
+    "rocCurve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.001
+      },
+      {
+        "fpr": 0.02,
+        "tpr": 0.194
+      },
+      {
+        "fpr": 0.05,
+        "tpr": 0.324
+      },
+      {
+        "fpr": 0.1,
+        "tpr": 0.448
+      },
+      {
+        "fpr": 0.15,
+        "tpr": 0.537
+      },
+      {
+        "fpr": 0.2,
+        "tpr": 0.602
+      },
+      {
+        "fpr": 0.3,
+        "tpr": 0.699
+      },
+      {
+        "fpr": 0.4,
+        "tpr": 0.771
+      },
+      {
+        "fpr": 0.5,
+        "tpr": 0.834
+      },
+      {
+        "fpr": 0.7,
+        "tpr": 0.931
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "status": "Trained",
+    "params": "0.4 M",
+    "framework": "PyTorch",
+    "lossCurve": [
+      1.0764,
+      1.0569,
+      1.034,
+      1.0078,
+      0.9925,
+      0.9713,
+      0.9516,
+      0.9351,
+      0.9265,
+      0.9193,
+      0.9152,
+      0.9091,
+      0.9109,
+      0.9061,
+      0.9032,
+      0.901,
+      0.9008,
+      0.8983,
+      0.8951,
+      0.8938,
+      0.8925,
+      0.891,
+      0.8904,
+      0.8899,
+      0.8892
+    ]
+  },
+  {
+    "name": "Bi-LSTM",
+    "accuracy": 73.3,
+    "aucRoc": 0.786,
+    "f1": 0.526,
+    "precision": 0.431,
+    "recall": 0.675,
+    "trainTimeSeconds": 341.8,
+    "inferenceMs": 1.16,
+    "trainedOn": "2026-05-12 17:38",
+    "confusionMatrix": {
+      "tn": 27439,
+      "fp": 9173,
+      "fn": 3355,
+      "tp": 6960
+    },
+    "rocCurve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.001
+      },
+      {
+        "fpr": 0.02,
+        "tpr": 0.212
+      },
+      {
+        "fpr": 0.05,
+        "tpr": 0.332
+      },
+      {
+        "fpr": 0.1,
+        "tpr": 0.46
+      },
+      {
+        "fpr": 0.15,
+        "tpr": 0.544
+      },
+      {
+        "fpr": 0.2,
+        "tpr": 0.62
+      },
+      {
+        "fpr": 0.3,
+        "tpr": 0.723
+      },
+      {
+        "fpr": 0.4,
+        "tpr": 0.797
+      },
+      {
+        "fpr": 0.5,
+        "tpr": 0.857
+      },
+      {
+        "fpr": 0.7,
+        "tpr": 0.942
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "status": "Baseline",
+    "params": "0.6 M",
+    "framework": "PyTorch",
+    "lossCurve": [
+      1.0467,
+      1.0044,
+      0.978,
+      0.9452,
+      0.9314,
+      0.9241,
+      0.9196,
+      0.9175,
+      0.9085,
+      0.9113,
+      0.9103,
+      0.9089,
+      0.911,
+      0.909,
+      0.9112,
+      0.9032,
+      0.9014,
+      0.9042,
+      0.9035,
+      0.8989
+    ]
+  }
+]

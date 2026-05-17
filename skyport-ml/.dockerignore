@@ -1,0 +1,14 @@
+# Ignore the virtual environment
+.venv/
+venv/
+__pycache__/
+
+# Ignore massive raw datasets and caches
+data/raw/
+*.zip
+
+# Ignore git history
+.git/
+
+# Ignore frontend stuff if it accidentally leaked in
+node_modules/
