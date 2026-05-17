@@ -28,7 +28,7 @@ __pycache__/
 # ==========================================
 # Ignore raw data and heavy compressed files
 skyport-ml/data/raw/
-*.parquet
+#*.parquet
 *.zip
 *.csv
 

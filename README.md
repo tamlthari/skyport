@@ -1,7 +1,7 @@
 
   # Airport Flight Data Dashboard
 
-  This is a code bundle for Airport Flight Data Dashboard. The original project is available at https://www.figma.com/design/30eYKDfRsp6TlZgVyHaT64/Airport-Flight-Data-Dashboard.
+  This is a code bundle for Airport Flight Data Dashboard. The original project is available at https://violet-stuck-30699379.figma.site.
 
   ## Running the code
 
